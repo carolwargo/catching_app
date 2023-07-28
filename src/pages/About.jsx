@@ -1,5 +1,5 @@
 import React from 'react';
-import {about} from '../images/about.png'; // Importing image from assets folder
+import about from '../images/about.png'; // Importing image from assets folder
 
 export default function About() {
     return(
