@@ -5,39 +5,49 @@ import Header from '../components/Header';
 import "../Styles/Home.css"
 
 export default function Home() {
-    return (
-        <>
-        <Header />
-        <div className="container-body">
-            <div className="left-col">
-                <div className="content">
-                    <h1>301_catching</h1>
-                    <p>Master your craft &  Elevate your game.</p>
-                </div>
-            </div>  
+  return (
+    <>
+      <Header />
+      <div className="container-body">
 
-           <div className="right-col">
-                <div className="content-form">
-                    <div class="input-wrapper">
-                    <label for="name"></label>
-                    <input type="text"></input>
-                </div>
+        <div className="left-col">
 
-                <div class="input-wrapper">
-                    <label for="email"></label>
-                    <input type="text"></input>
-                </div>
+          <div className="content">
+            <h1>301_catching</h1>
+            <p>Master your craft & Elevate your game.</p>
+          </div>
 
-                <div class="input-wrapper">
-                    <button>Sign me up</button>
-                </div>
-
-           </div>
-            
         </div>
-    </div>
-    <Footer />
-        </>
-       
-    )
+
+        <div className="right-col">
+
+          <div className="content-form">
+
+            <div className="input-wrapper">
+
+              <label for="name"></label>
+              <input type="text"></input>
+
+            </div>
+
+            <div className="input-wrapper">
+
+              <label for="email"></label>
+              <input type="text"></input>
+
+            </div>
+
+            <div className="input-wrapper">
+
+              <button>Sign me up</button>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      <Footer />
+    </>
+  );
 }
