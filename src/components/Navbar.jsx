@@ -1,22 +1,35 @@
-import Button from 'react-bootstrap/Button'; // Used for rendering a button with various styles.
-import Container from 'react-bootstrap/Container'; // Used as a layout container to wrap content.
-import Form from 'react-bootstrap/Form'; // Used for rendering form elements.
-import Nav from 'react-bootstrap/Nav'; // Used for rendering navigation components.
-import Navbar from 'react-bootstrap/Navbar'; // Used for rendering a navigation bar.
-import NavDropdown from 'react-bootstrap/NavDropdown'; // Used for rendering dropdown menus in the navigation bar.
-import Offcanvas from 'react-bootstrap/Offcanvas'; // Used for rendering off-canvas content.
+import React, { useState } from 'react';
+import Navbar from 'react-bootstrap/Navbar';
+import Container from 'react-bootstrap/Container';
+import Offcanvas from 'react-bootstrap/Offcanvas';
+import Nav from 'react-bootstrap/Nav';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import '../Style/css/navbar.css'; // Import your custom CSS file
 
 export default function MyNavbar() {
+  // State to control the visibility of the offcanvas
+  const [showOffcanvas, setShowOffcanvas] = useState(false);
+
+  // Function to toggle the offcanvas visibility
+  const toggleOffcanvas = () => {
+    setShowOffcanvas((prevShow) => !prevShow);
+  };
+
   return (
     <>
       {[false, 'sm', 'md', 'lg', 'xl', 'xxl'].map((expand) => (
         <Navbar key={expand} expand={expand} className="bg-body-tertiary mb-3">
           <Container fluid>
-            <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand> 
-            {/* Brand/logo for the navigation bar */}
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} /> 
-            {/* Toggle button for mobile navigation */}
+            <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+            <Navbar.Toggle
+              aria-controls={`offcanvasNavbar-expand-${expand}`}
+              onClick={toggleOffcanvas}
+            />
             <Navbar.Offcanvas
+              show={showOffcanvas}
+              onHide={() => setShowOffcanvas(false)}
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
@@ -26,50 +39,30 @@ export default function MyNavbar() {
                   Offcanvas
                 </Offcanvas.Title>
               </Offcanvas.Header>
-              <Offcanvas.Body>
-                <Nav className="justify-content-end flex-grow-1 pe-3"> {/* Navigation links container */}
-                  {/* Navigation link */}
-                  <Nav.Link href="#action1">Home</Nav.Link> 
-                  {/* Navigation link */}
-                  <Nav.Link href="#action2">About</Nav.Link> 
-                  {/* Navigation link */}
+              <Offcanvas.Body className="custom-offcanvas-body">
+                <Nav className="justify-content-end flex-grow-1 pe-3">
+                  <Nav.Link href="#action1">Home</Nav.Link>
+                  <Nav.Link href="#action2">About</Nav.Link>
                   <Nav.Link href="#action3">Contact</Nav.Link>
-                  {/* Navigation link */}
                   <Nav.Link href="#action4">Services</Nav.Link>
-                  <NavDropdown
-                    title="Dropdown"
-                    id={`offcanvasNavbarDropdown-expand-${expand}`}
-                  >
-                    {/* Dropdown items container */} 
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item> {/* Dropdown item */}
-                    <NavDropdown.Item href="#action4">
-                      Another action
-                    {/* Dropdown item */}  
-                    </NavDropdown.Item>
-                    {/* Divider line between dropdown items */}
-                    <NavDropdown.Divider /> 
-                    <NavDropdown.Item href="#action5">
-                      Something else here
-                    {/* Dropdown item */}
-                    </NavDropdown.Item> 
-                  {/* Dropdown menu */}
-                  </NavDropdown> 
+                  <NavDropdown title="Dropdown" id={`offcanvasNavbarDropdown-expand-${expand}`}>
+                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                    <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="#action5">Something else here</NavDropdown.Item>
+                  </NavDropdown>
                 </Nav>
-
-                {/* START Form container */}
-                <Form className="d-flex"> 
+                <Form className="d-flex">
                   <Form.Control
                     type="search"
                     placeholder="Search"
                     className="me-2"
                     aria-label="Search"
-                  /> {/* Search input field */}
-                  {/* Search button */}
-                  <Button variant="outline-success">Search</Button> 
+                  />
+                  <Button variant="outline-success">Search</Button>
                 </Form>
               </Offcanvas.Body>
-            {/* Off-canvas content */}  
-            </Navbar.Offcanvas> 
+            </Navbar.Offcanvas>
           </Container>
         </Navbar>
       ))}

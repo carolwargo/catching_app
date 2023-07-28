@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+/* styles.css */
+.custom-navbar-link {
+  color: #ffffff; /* Replace with your desired color */
+}
+
+/* styles.css */
+.custom-offcanvas-header {
+  background-color: #f5f5f5; /* Replace with your desired color */
+  color: #333333; /* Replace with your desired color */
+  font-size: 1.2rem; /* Replace with your desired font size */
+}
+
+.custom-offcanvas-body {
+  padding: 20px; /* Replace with your desired padding */
+}
+
+
+
