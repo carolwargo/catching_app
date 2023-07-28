@@ -6,8 +6,8 @@ export default function Home() {
         <div className="container-body">
             <div className="left-col">
                 <div className="content">
-                    <h1>Welcome to 301_catching</h1>
-                    <p>Master your craft- Elevate your game.</p>
+                    <h1>301_catching</h1>
+                    <p>Master your craft &  Elevate your game.</p>
                 </div>
             </div>  
 
