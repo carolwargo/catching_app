@@ -1,7 +1,19 @@
-import Navbar from "./Navbar";
+import React from "react";
 
-export default function Header() {
+import Navbar from 'react-bootstrap/Navbar';
+
+
+export default function Header(){
+
+
+
+
+
     return(
-        <Navbar/>
+        <div>
+            <Navbar/>
+        </div>
+     
     )
+    
 }

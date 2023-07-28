@@ -1,8 +1,11 @@
 import React from 'react';
-
+import Footer from '../components/Footer';
+import Header from '../components/Header';
 
 export default function Home() {
     return (
+        <>
+        <Header />
         <div className="container-body">
             <div className="left-col">
                 <div className="content">
@@ -31,6 +34,8 @@ export default function Home() {
             
         </div>
     </div>
+    <Footer />
+        </>
        
     )
 }
