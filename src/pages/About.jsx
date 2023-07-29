@@ -1,23 +1,22 @@
 import React from 'react';
-import about from '../images/about.png'; // Importing image from assets folder
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
-export default function About() {
-    return(
-        <div className="container-body">
-            <div className="left-col">
-                <div className="left-content">
-                    <h1>ABOUT</h1>
-                    <h3>Corey</h3>
-                    <h4>title</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quaerat nemo nulla? Similique vel eius libero est sed asperiores ab facere possimus. Doloribus ipsa, ducimus mollitia velit optio vitae voluptatibus.</p>
-                    <h3>"Bedrock"</h3>
-                    <h4>Philosophy</h4>
-                    <p></p>Key Priciples 
-                    <img src={about} alt="Corey Clay" /> {/* Dynamic image URL, curly braces needed */}
-                    <p>Content</p>
-                </div>
-            </div>
-        
-        </div>
-    )
+function AutoLayoutExample() {
+  return (
+    <Container>
+      <Row>
+        <Col>1 of 2</Col>
+        <Col>2 of 2</Col>
+      </Row>
+      <Row>
+        <Col>1 of 3</Col>
+        <Col>2 of 3</Col>
+        <Col>3 of 3</Col>
+      </Row>
+    </Container>
+  );
 }
+
+export default AutoLayoutExample;
