@@ -1,13 +1,24 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
 import { NavLink } from 'react-router-dom';
 import { FaTwitter, FaInstagram } from 'react-icons/fa';
+import Logo from "../images/Logo.png";
 
 import '../Styles/Navbar.css';
 
 function TabsExample() {
   return (
     <Nav variant="tabs" defaultActiveKey="/home">
+       <Navbar.Brand href="/">
+        <img
+          src={Logo}
+          alt="Logo"
+          height="90" // Adjust the height of the logo as needed
+       
+      />
+      </Navbar.Brand>
+
       <Nav.Item>
         <NavLink to="/home" className="nav-link" activeClassName="active">Home</NavLink>
       </Nav.Item>
