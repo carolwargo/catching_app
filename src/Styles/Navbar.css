@@ -1,3 +1,13 @@
-bg-body-tertiary {
-    color: whitesmoke;
-}
+/* navStyling.css */
+
+/* Styling for hover */
+.nav-link:hover {
+    font-weight: bold;
+    color: red;
+  }
+  
+  /* Styling for active */
+  .nav-link.active {
+    color: yellow;
+  }
+  

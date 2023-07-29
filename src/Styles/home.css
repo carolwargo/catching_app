@@ -6,13 +6,15 @@
     font-family: "Poppins";
   
   }
-  
+  /*"background" is the transparency*/
   .left-col {
     background: black;
     color: white;
-    text-align: center;
+    text-align: left;
     position: relative;
   }
+
+  /*Includes, Image with trans, h1, p, and form-container*/
   /* position relative on parent^, position absolute on child*/
   .left-col:before {
     content: "";
@@ -27,63 +29,40 @@
     opacity: .33;
   }
   
+  /* h1-"301_Catching", p-"Master your craft..."  */
+  /*stop image from bleeding throught text*/
   .content {
-    position: relative; /*stop image from bleeding throught text*/
+    position: relative; 
   }
 
-  .form {
-    background: white;
-    padding: 2em;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  }
 
-  
   .left-col {
-    padding: 6.75rem 8vw;
+    padding: 6.75rem 8vw; 
   }
   
- .col h1 {
+ .left-col h1 {
    margin: 0;
    font-family: "bebas neue";
    font-weight: bold;
-   font-size: 6rem;
+   font-size: 8rem;
    line-height: 1em;
     }
   
-  .col p {
+  .left-col p {
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 20px;
   }
-  
-  label {
-    display: block;
-    font-size: 1.125rem;
-    margin-bottom: .77rem;
-  }
-  
-  input {
-    width: 100%;
-    background: #ededed;
-    border: 1px solid #c7c7c7;
-    font-size: 1 rem;
-    padding: .75rem;
-    outline: none;
-    margin-bottom: 2.5em; 
-  }
-  
-  input[type="text"]:focus {
-    border: 3px solid white;
-  }
+
   
   button {
     width: 100%;
     background: red;
     padding: 1em;
     color: white;
+    font-weight: bold;
     border:none;
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     cursor: pointer;
   }
   
@@ -104,13 +83,61 @@
         display: flex;
     }
     
-    .left-col, .right-col {
+    .left-col {
         flex-basis:0;
         flex-grow: 1;
         height: 100vh;
         display: grid;
         place-items: center;
     }
-  
-   
   }
+
+      /*
+  .label {
+    display: block;
+    font-size: 1.125rem;
+    margin-bottom: .77rem;
+    color: black;
+  }
+  
+  input {
+    width: 100%;
+    background: #ededed;
+    border: 1px solid #c7c7c7;
+    font-size: 1 rem;
+    padding: .5rem;
+    outline: none;
+    margin-bottom: 1em; 
+  }
+  
+  input[type="text"]:focus {
+    border: 2px solid white;
+  }
+
+  .input-wrapper {
+    position: relative;
+    color: black;
+  }
+  */
+   /* .form {
+    background: white;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 575px;
+  }
+  */
+
+/*"Form Container
+  .form-container {
+    transform: translate(-50%, -50%);
+    background-color: #c7c7c7;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+  }
+*/
+
+   
+ 

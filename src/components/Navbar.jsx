@@ -1,26 +1,27 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
+import { NavLink } from 'react-router-dom';
+
+import '../Styles/Navbar.css';
 
 function TabsExample() {
   return (
     <Nav variant="tabs" defaultActiveKey="/home">
-
       <Nav.Item>
-        <Nav.Link href="/home">Home</Nav.Link>
+        <NavLink to="/home" className="nav-link" activeClassName="active">Home</NavLink>
       </Nav.Item>
 
       <Nav.Item>
-        <Nav.Link eventKey="/about">About</Nav.Link>
+        <NavLink to="/about" className="nav-link" activeClassName="active">About</NavLink>
       </Nav.Item>
 
       <Nav.Item>
-        <Nav.Link eventKey="/train">Train</Nav.Link>
+        <NavLink to="/train" className="nav-link" activeClassName="active">Train</NavLink>
       </Nav.Item>
 
       <Nav.Item>
-        <Nav.Link eventKey="/contact">Contact</Nav.Link>
+        <NavLink to="/contact" className="nav-link" activeClassName="active">Contact</NavLink>
       </Nav.Item>
-
     </Nav>
   );
 }
