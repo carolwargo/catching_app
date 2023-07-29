@@ -14,8 +14,8 @@ function TabsExample() {
         <img
           src={Logo}
           alt="Logo"
-          height="90" // Adjust the height of the logo as needed
-       
+          height="30" // Adjust the height of the logo as needed
+          className="d-inline-block align-top mt-1"
       />
       </Navbar.Brand>
 
