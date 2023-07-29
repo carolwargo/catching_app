@@ -34,12 +34,12 @@ export default function Home() {
                 <Col>
             
                 <div className="input-wrapper">
-                    <label for="name"></label>
+                    <label for="name">Full Name</label>
                     <input type="text"></input>
                 </div>
                 <br></br>
                 <div className="input-wrapper">
-                    <label for="email"></label>
+                    <label for="email">Email Address</label>
                     <input type="text"></input>
                 </div>
                 <br></br>
