@@ -24,29 +24,37 @@
     background-image: url("../images/Cover.png");
     background-size: cover;
     background-position: 100%;
-    opacity: .44;
+    opacity: .33;
   }
   
   .content {
     position: relative; /*stop image from bleeding throught text*/
   }
+
+  .form {
+    background: white;
+    padding: 2em;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
   
   .left-col {
     padding: 6.75rem 8vw;
   }
   
-  h1 {
+ .col h1 {
    margin: 0;
    font-family: "bebas neue";
    font-weight: bold;
-   font-size: 5rem;
-   line-height: 1.2em;
+   font-size: 6rem;
+   line-height: 1em;
     }
   
-  p {
-    font-size: 1.5rem;
+  .col p {
+    font-size: 1rem;
     font-weight: 500;
-    margin-bottom: 0;
+    margin-bottom: 20px;
   }
   
   label {
@@ -66,7 +74,7 @@
   }
   
   input[type="text"]:focus {
-    border: 3px solid black;
+    border: 3px solid white;
   }
   
   button {
@@ -104,10 +112,5 @@
         place-items: center;
     }
   
-    .right-col {
-        text-align: right;  
-    }
+   
   }
-  
-  
-  
