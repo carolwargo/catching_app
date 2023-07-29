@@ -7,7 +7,7 @@ function FormFileExample() {
     <div className='train-container'>
     <h1>TRAIN LIKE A CAVEMAN</h1>
     <br></br>
-    <div className='evaluation-information'>  
+    <div className='evaluation-container'>  
         <h2>IN-PERSON TRAINING</h2>
             
         <h5>How it works</h5>
