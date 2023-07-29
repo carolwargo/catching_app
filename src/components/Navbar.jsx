@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from 'react-bootstrap/Nav';
 import { NavLink } from 'react-router-dom';
+import { FaTwitter, FaInstagram } from 'react-icons/fa';
 
 import '../Styles/Navbar.css';
 
@@ -21,6 +22,19 @@ function TabsExample() {
 
       <Nav.Item>
         <NavLink to="/contact" className="nav-link" activeClassName="active">Contact</NavLink>
+      </Nav.Item>
+
+        {/* Add Twitter and Instagram icons */}
+        <Nav.Item>
+        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="nav-link">
+          <FaTwitter size={20} />
+        </a>
+      </Nav.Item>
+
+      <Nav.Item>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="nav-link">
+          <FaInstagram size={20} />
+        </a>
       </Nav.Item>
     </Nav>
   );

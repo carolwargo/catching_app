@@ -5,7 +5,6 @@ import Contact from './pages/Contact';
 import Train from './pages/Train';
 
 import Header from './components/Header';
-import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 import 'bootstrap/dist/css/bootstrap.min.css'; // Import Bootstrap CSS
@@ -15,7 +14,6 @@ import './App.css';
 export default function App() {
   return(
     <Router>
-      <Navbar />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
