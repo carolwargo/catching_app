@@ -37,13 +37,13 @@ function TabsExample() {
 
         {/* Add Twitter and Instagram icons */}
         <Nav.Item>
-        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="nav-link">
+        <a href="https://twitter.com/301catching" target="_blank" rel="noopener noreferrer" className="nav-link">
           <FaTwitter size={20} />
         </a>
       </Nav.Item>
 
       <Nav.Item>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="nav-link">
+        <a href="https://www.instagram.com/301_catching/" target="_blank" rel="noopener noreferrer" className="nav-link">
           <FaInstagram size={20} />
         </a>
       </Nav.Item>

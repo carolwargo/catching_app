@@ -1,11 +1,11 @@
 .footer-copyright {
     text-align: center !important;
-    font-size: 1.2rem;
-    color: #fff;
-    background-color: #000;
-    padding: 1rem;
-    margin-top: 1rem;
-    position: fixed;
+    font-size: 1.2rem !important;
+    color: #fff !important;
+    background-color: #000 !important;
+    padding: 1rem !important;
+    margin-top: 1rem !important;
+    position: fixed !important;
     bottom: 0;
     width: 100%;
 }
