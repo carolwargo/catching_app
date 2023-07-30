@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/Home.css";
 import { Link } from "react-router-dom";
-import "../pages/Signup.js"
+import "../pages/Signup.jsx"
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";

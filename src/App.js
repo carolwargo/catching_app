@@ -6,7 +6,7 @@ import Contact from './pages/Contact';
 import Train from './pages/Train';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import SignUp from "./pages/Signup"
+import SignUp from './pages/Signup'
 import Login from './pages/Login';
 
 
