@@ -1,13 +1,14 @@
 import React from "react";
 import "../Styles/Home.css";
 import { Link } from "react-router-dom";
-import Contact from "./Contact";
+import "../pages/Signup.js"
 import Col from "react-bootstrap/Col";
 import Row from "react-bootstrap/Row";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
+import SignUpForm from "./Signup";
 
 export default function Home() {
   return (
@@ -18,11 +19,11 @@ export default function Home() {
             <div className="content"> 
             <h2>WELCOME TO</h2>
               <h1>301_catching</h1>
-              <h3>THE FOUNDATIONAL EXPERTS for everything catching-</h3>
-              <p>Helping to "Master your craft & elevate your game."</p>
+              <h3>THE "FOUNDATIONAL EXPERTS" for everything catching-</h3>
+              <p>We provide you with the skills to master your craft & elevate your game.</p>
             </div>
             <div className="input-btn">
-              <Link to={Contact}>
+              <Link to={SignUpForm}>
                 <button>Sign me up</button>
               </Link>
             </div>
