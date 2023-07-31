@@ -1,105 +1,126 @@
-*, *:before, *:after {
-    box-sizing: border-box;
-  }
-  body {
-    margin: 0;
-    font-family: "Poppins";
-  
-  }
-  /*"background" is the transparency*/
-  .left-col {
-    background: black;
-    color: white;
-    text-align: left;
-    position: relative;
-    height: 110vh;
-    
-  }
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Poppins";
+}
 
-  /*Includes, Image with trans, h1, p, and form-container*/
-  /* position relative on parent^, position absolute on child*/
-  .left-col:before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../images/Cover.png");
-    background-size: cover;
-    background-position: 100%;
-    opacity: .55;
-  }
-  
-  .left-col .content-container {
-    position: absolute;
-    top: 20%;
-    transform: translateY(-40%);
-    transform: translateX(1%);
-    padding: 0 5%;
-    width: 100%;
-  }
+/*"background" is the transparency*/
+.main-col {
+  background: black;
+  color: white;
+  text-align: left;
+  position: relative;
+  height: 100vh;
+}
 
-  /* h1-"301_Catching", p-"Master your craft..."  */
-  /*stop image from bleeding throught text*/
-  .content-container {
-    position: relative; 
+/*Includes, Image with trans, h1, p, and form-container*/
+/* position relative on parent^, position absolute on child*/
+.main-col:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/Cover.png");
+  background-size: cover;
+  background-position: 100%;
+  opacity: 0.55;
+}
 
-  }
+.main-col .content-container {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-40%);
+  transform: translateX(1%);
+  padding: 0 5%;
+  width: 100%;
+}
 
-  .content h2 {
-    font-family: "Poppins";
-    font-weight: bold;
-    font-size: 4rem;
-    line-height: 1em;
-  }
+/* h1-"301_Catching", p-"Master your craft..."  */
+/*stop image from bleeding throught text*/
+.content-container {
+  position: relative;
+}
 
+/*MAIN container content*/
+.content h2 {
+  font-family: "Poppins";
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: 1em;
+}
 
- .content h1 {
-   margin: 0;
-   font-family: "bebas neue";
-   font-weight: bold;
-   font-size: 10rem;
-   line-height: 1em;
-    }
-  
-  .content p {
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 20px;
-  }
+.red-text {
+  color: red;
+}
 
-  
-  button {
-    width: 100%;
-    background: red;
-    padding: 1em;
-    color: white;
-    font-weight: bold;
-    border:none;
-    font-size: 1.25rem;
-    cursor: pointer;
-  }
+.content h1 {
+  margin: 0;
+  font-family: "bebas neue";
+  font-weight: bold;
+  font-size: 10rem;
+  line-height: 1em;
+}
 
-.register-form {
-  background-color: rgb(210, 214, 217) !important;
-  color: red !important;
-  margin-left: 20px !important;
-  margin-right: 50px !important;
-  margin-top: 20px !important;  
-  margin-bottom: 20px !important;
+.content h5 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+
+/* Home.css */
+.signup-btn {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 10px !important;
+  box-shadow: 3px 3px 3px rgb(168, 168, 149) !important; /* Add the box shadow */
+}
+
+.signup-btn:hover {
+  background-color: white;
+  color: red;
+}
+
+/* FORM styling */
+.form-group.mb-3 {
+  margin-top: 10rem;
+}
+
+.register-form button {
+  background-color: red !important;
 }
 
 
-    .form {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        gap: 2em;
-    }
-        button {
-            width: auto;
-            padding: 1em 2.5em;
-        }  
-  
 
-       
+.register-form {
+  background-color: black !important;
+  color: white!important;
+  padding: 1rem !important;
+}
+
+.form-text {
+  color: white !important;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+}
+button {
+  width: auto;
+  padding: 1em 2.5em;
+}
+
+
