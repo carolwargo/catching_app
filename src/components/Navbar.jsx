@@ -10,7 +10,7 @@ import '../Styles/Navbar.css';
 
 function TabsExample() {
   return (
-    <Navbar expand="lg" variant="dark" bg="dark">
+       <Navbar variant="tabs" defaultActiveKey="/home">
       <Navbar.Brand href="/">
         <img
           src={Logo}
@@ -46,7 +46,7 @@ function TabsExample() {
               <FaInstagram size={20} />
             </NavLink>
           </Nav.Item>
-          <NavDropdown title="MEMBERS" id="basic-nav-dropdown">
+          <NavDropdown className="dropdown" title="MEMBERS" id="basic-nav-dropdown">
             <NavDropdown.Item as={NavLink} to="/login">Login</NavDropdown.Item>
             <NavDropdown.Item as={NavLink} to="/signup">Sign Up</NavDropdown.Item>
           </NavDropdown>

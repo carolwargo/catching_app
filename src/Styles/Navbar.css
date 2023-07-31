@@ -1,5 +1,7 @@
 /* navStyling.css */
-
+.dropdown {
+  margin-left: 57em !important;
+}
 
 /* Styling for hover */
 .nav-link:hover {
