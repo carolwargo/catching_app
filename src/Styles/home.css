@@ -34,7 +34,7 @@ body {
 
 .main-col .content-container {
   position: absolute;
-  top: 30%;
+  top: 20%;
   transform: translateY(-40%);
   transform: translateX(1%);
   padding: 0 5%;
