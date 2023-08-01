@@ -16,8 +16,8 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import LockOpenIcon from "@mui/icons-material/LockOpen";
-import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
-import LockIcon from '@mui/icons-material/Lock';
+import FitnessCenterIcon from "@mui/icons-material/FitnessCenter";
+import LockIcon from "@mui/icons-material/Lock";
 import Typography from "@mui/material/Typography";
 
 export default function Home() {
@@ -29,37 +29,34 @@ export default function Home() {
             <div className="content">
               <h2>WELCOME TO</h2>
               <h1>301_catching</h1>
-              <h3>The
-              <span className="red-text"> "FOUNDATIONAL EXPERTS"
-              </span> for everything catching:</h3>
+              <h3>
+                The
+                <span className="red-text"> "FOUNDATIONAL EXPERTS"</span> for
+                everything catching:
+              </h3>
               <h5>
-                "We provide players with the skills to master their craft & elevate
-                their game."
+                "We provide players with the skills to master their craft &
+                elevate their game."
               </h5>
             </div>
-         
-       
           </div>
         </div>
       </div>
 
-
-
-{/*TIMELINE START */}
-{/*1. SIGNUP FORM start*/}
+      {/*TIMELINE START */}
+      {/*1. SIGNUP FORM start*/}
       <Timeline position="alternate">
-
-{/*"learn-more-Container" START */}
-      <Container className="learn-more-container">
-  <h1>
-  <span className="red-text">
-          <Link to="/learn-more">LEARN MORE</Link>
-        </span>
-        </h1>
-    <h4>Unlock the benefits of 301_catching: </h4>
-  <p> Follow the step-by-step guide below.</p>
-  </Container>
-{/*"learn-more-Container" END */}
+        {/*"learn-more-Container" START */}
+        <Container className="learn-more-container">
+          <h1>
+            <span className="red-text">
+              <Link to="/learn-more">LEARN MORE</Link>
+            </span>
+          </h1>
+          <h4>Unlock the benefits of 301_catching: </h4>
+          <p> Follow the step-by-step guide below.</p>
+        </Container>
+        {/*"learn-more-Container" END */}
 
         <TimelineItem>
           <TimelineOppositeContent
@@ -67,19 +64,15 @@ export default function Home() {
             align="right"
             variant="body2"
             color="text.secondary"
-          >
-          </TimelineOppositeContent>
-          
+          ></TimelineOppositeContent>
         </TimelineItem>
         <TimelineItem>
-          
           <TimelineOppositeContent
             sx={{ m: "auto 0" }}
             variant="body2"
             color="text.secondary"
           >
-           
-           <Typography>
+            <Typography>
               <Col sm={10} className="register-form-col">
                 <Container className="register-form" style={{ margin: "20px" }}>
                   <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -103,15 +96,12 @@ export default function Home() {
                   </Button>
                 </Container>
               </Col>
-{/*1. SIGNUP FORM end*/}
-
+              {/*1. SIGNUP FORM end*/}
             </Typography>
-
           </TimelineOppositeContent>
-          
-          
+
           <TimelineSeparator>
-          <TimelineDot color="primary">
+            <TimelineDot color="primary">
               <LockIcon />
             </TimelineDot>
             <TimelineConnector />
@@ -121,28 +111,30 @@ export default function Home() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
-            
             <Typography>
               <Container className="training-card" style={{ margin: "20px" }}>
                 <h3 className="timeline-header">Step 1: SIGN UP TODAY!</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sint sit deserunt cupiditate tempore alias. Nobis rem alias architecto porro vel quisquam iste beatae suscipit voluptatum. Voluptas sapiente modi deserunt?</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero sint sit deserunt cupiditate tempore alias. Nobis rem
+                  alias architecto porro vel quisquam iste beatae suscipit
+                  voluptatum. Voluptas sapiente modi deserunt?
+                </p>
               </Container>
             </Typography>
           </TimelineContent>
         </TimelineItem>
-{/*"1. SIGN UP TODAY" end */} 
-        
-{/*"2. WHO WE ARE" start */}
+        {/*"1. SIGN UP TODAY" end */}
+
+        {/*"2. WHO WE ARE" start */}
         <TimelineItem>
           <TimelineOppositeContent
             sx={{ m: "auto 0" }}
             variant="body2"
             color="text.secondary"
           >
-           {/*!!!!!!!!!!!!!!!!!ADD CONTAINER IMAGE OF SORT */}
-           <Container className="who-container">
-            
-           </Container>
+            {/*!!!!!!!!!!!!!!!!!ADD CONTAINER IMAGE OF SORT */}
+            <Container className="who-container"></Container>
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector />
@@ -152,32 +144,33 @@ export default function Home() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
-            <Typography variant="h6" component="span">
-              
-            </Typography>
-              {/*!!!!!!!!!!!!!!!!!ADD CONTAINER TEXT FOR TRAINING */}
+            <Typography variant="h6" component="span"></Typography>
+            {/*!!!!!!!!!!!!!!!!!ADD CONTAINER TEXT FOR TRAINING */}
             <Typography>
               <Container className="training-card" style={{ margin: "20px" }}>
                 <h3 className="timeline-header">Step 2: WHO WE ARE</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sint sit deserunt cupiditate tempore alias. Nobis rem alias architecto porro vel quisquam iste beatae suscipit voluptatum. Voluptas sapiente modi deserunt?</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero sint sit deserunt cupiditate tempore alias. Nobis rem
+                  alias architecto porro vel quisquam iste beatae suscipit
+                  voluptatum. Voluptas sapiente modi deserunt?
+                </p>
               </Container>
-
             </Typography>
           </TimelineContent>
         </TimelineItem>
-        
-{/*"2. WHO WE ARE" end*/}  
 
+        {/*"2. WHO WE ARE" end*/}
 
-{/*"3. WHAT WE DO" start*/}
-         <TimelineItem>
+        {/*"3. WHAT WE DO" start*/}
+        <TimelineItem>
           <TimelineOppositeContent
             sx={{ m: "auto 0" }}
             variant="body2"
             color="text.secondary"
           >
-           {/*!!!!!!!!!!!!!!!!!ADD CONTAINER IMAGE OF SORT */}
-           Training Services
+            {/*!!!!!!!!!!!!!!!!!ADD CONTAINER IMAGE OF SORT */}
+            Training Services
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector />
@@ -187,21 +180,22 @@ export default function Home() {
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
-            <Typography variant="h6" component="span">
-              
-            </Typography>
-              {/*!!!!!!!!!!!!!!!!!ADD CONTAINER TEXT FOR TRAINING */}
+            <Typography variant="h6" component="span"></Typography>
+            {/*!!!!!!!!!!!!!!!!!ADD CONTAINER TEXT FOR TRAINING */}
             <Typography>
               <Container className="training-card" style={{ margin: "20px" }}>
                 <h3 className="timeline-header">Step 3: WHAT WE DO</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sint sit deserunt cupiditate tempore alias. Nobis rem alias architecto porro vel quisquam iste beatae suscipit voluptatum. Voluptas sapiente modi deserunt?</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero sint sit deserunt cupiditate tempore alias. Nobis rem
+                  alias architecto porro vel quisquam iste beatae suscipit
+                  voluptatum. Voluptas sapiente modi deserunt?
+                </p>
               </Container>
-
             </Typography>
           </TimelineContent>
         </TimelineItem>
-{/*"3. WHAT WE DO" end*/}
-
+        {/*"3. WHAT WE DO" end*/}
       </Timeline>
     </>
   );
