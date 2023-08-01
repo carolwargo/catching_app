@@ -1,7 +1,7 @@
 import React from "react";
 import "../Styles/Home.css";
 import { Link } from "react-router-dom";
-import "../pages/Signup.jsx";
+import "./Signup.jsx";
 import Col from "react-bootstrap/Col";
 
 import Button from "react-bootstrap/Button";
