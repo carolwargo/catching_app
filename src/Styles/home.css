@@ -118,9 +118,14 @@ body {
   display: grid;
   grid-template-columns: repeat(2, auto);
 }
+
 button {
   width: auto;
   padding: 1em 2.5em;
 }
 
+.who-container {
+  background-color: black;
+  padding: 10px;
+}
 

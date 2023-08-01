@@ -1,16 +1,44 @@
-import React from 'react';
-import "../Styles/Contact.css"
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Form from "react-bootstrap/Form";
+import Button from "react-bootstrap/Button";
+import { Row, Col } from "react-bootstrap";
 
 export default function Contact() {
-    return (
-        <div className="container-body">
-            <div className="main-col">
-                <div className="content">
-                    <h3>301_catching</h3>
-                    <p>Master your craft &  Elevate your game.</p>
-                </div>
-            </div>         
-    </div>
-       
-    )
+  return (
+
+    <Row md={5} lg={3}>
+    <Container className="page-container">
+    <Col className="md-5"></Col>  
+      <h1>Contact Us</h1>
+    <Col className="lg-3">
+      <Form>
+        <Form.Group controlId="formBasicName">
+          <Form.Label>Name</Form.Label>
+          <Form.Control type="text" placeholder="Enter your name" />
+        </Form.Group>
+
+        <Form.Group controlId="formBasicEmail">
+          <Form.Label>Email address</Form.Label>
+          <Form.Control type="email" placeholder="Enter your email" />
+        </Form.Group>
+
+        <Form.Group controlId="formBasicSubject">
+          <Form.Label>Subject</Form.Label>
+          <Form.Control type="text" placeholder="Enter the subject" />
+        </Form.Group>
+
+        <Form.Group controlId="formBasicMessage">
+          <Form.Label>Message</Form.Label>
+          <Form.Control as="textarea" rows={5} placeholder="Enter your message" />
+        </Form.Group>
+
+        <Button variant="primary" type="submit">
+          Submit
+        </Button>
+      </Form>
+        </Col>
+    </Container>
+    </Row>
+  );
 }

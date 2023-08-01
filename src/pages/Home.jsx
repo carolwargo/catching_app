@@ -16,9 +16,10 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import LockOpenIcon from "@mui/icons-material/LockOpen";
-import LaptopMacIcon from "@mui/icons-material/LaptopMac";
+import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
 import HotelIcon from "@mui/icons-material/Hotel";
 import RepeatIcon from "@mui/icons-material/Repeat";
+import LockIcon from '@mui/icons-material/Lock';
 import Typography from "@mui/material/Typography";
 
 export default function Home() {
@@ -50,6 +51,9 @@ export default function Home() {
         </div>
       </div>
 
+
+
+{/*TIMELINE START */}
       {/*Timeline- "STEP 1 start*/}
       <Timeline position="alternate">
         <TimelineItem>
@@ -59,27 +63,18 @@ export default function Home() {
             variant="body2"
             color="text.secondary"
           >
-            Step 1: Become a member 
           </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot>
-              <LockOpenIcon />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-
-          {/*SIGNUP FORM left side heading start*/}
-          <TimelineContent sx={{ py: "12px", px: 2 }}>
-          <Typography variant="h6" component="div" sx={{  marginRight: "10px" }}>
-            <h3 style={{ fontWeight: "bold" }}> Sign up today!</h3> 
-              <p>  Sign-up to capture your "Player Profile", <br></br>  real-time updates, exclusive 
-              content & more!</p> 
-            </Typography>
-            {/*SIGNUP FORM left side heading end*/}
-
-            {/*Timeline-SIGNUP FORM start*/}
-            <Typography>
+          
+        </TimelineItem>
+        <TimelineItem>
+          
+          <TimelineOppositeContent
+            sx={{ m: "auto 0" }}
+            variant="body2"
+            color="text.secondary"
+          >
+           
+           <Typography>
               <Col sm={10} className="register-form-col">
                 <Container className="register-form" style={{ margin: "20px" }}>
                   <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -105,34 +100,103 @@ export default function Home() {
               </Col>
               {/*SIGNUP FORM end*/}
             </Typography>
+
+          </TimelineOppositeContent>
+          
+          
+          <TimelineSeparator>
+          <TimelineDot color="primary">
+              <LockIcon />
+            </TimelineDot>
+            <TimelineConnector />
+            <TimelineDot color="primary">
+              <LockOpenIcon />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: "12px", px: 2 }}>
+            
+            <Typography>
+              <Container className="training-card" style={{ margin: "20px" }}>
+                <h3 className="timeline-header">Step 1: SIGN UP TODAY!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sint sit deserunt cupiditate tempore alias. Nobis rem alias architecto porro vel quisquam iste beatae suscipit voluptatum. Voluptas sapiente modi deserunt?</p>
+              </Container>
+            </Typography>
           </TimelineContent>
         </TimelineItem>
-        {/*Timeline- "STEP 1" end*/}
+      
 
-        {/*Timeline- "SOFTBALL"-"BASEBALL" start*/}
+
+
+        {/*Timeline- TRAINING start*/}
         <TimelineItem>
           <TimelineOppositeContent
             sx={{ m: "auto 0" }}
             variant="body2"
             color="text.secondary"
           >
-           Step 2: Baseball Catchers Training
+           {/*!!!!!!!!!!!!!!!!!ADD CONTAINER IMAGE OF SORT */}
+           <Container className="who-container">
+            
+           </Container>
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineConnector />
             <TimelineDot color="primary">
-              <LaptopMacIcon />
+              <FitnessCenterIcon />
             </TimelineDot>
             <TimelineConnector />
           </TimelineSeparator>
           <TimelineContent sx={{ py: "12px", px: 2 }}>
             <Typography variant="h6" component="span">
-              BASEBALL
+              
             </Typography>
-            <Typography>Because men are p&*%#!#&- LADIES FIRST!</Typography>
+              {/*!!!!!!!!!!!!!!!!!ADD CONTAINER TEXT FOR TRAINING */}
+            <Typography>
+              <Container className="training-card" style={{ margin: "20px" }}>
+                <h3 className="timeline-header">Step 2: VIEW CONTENT</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sint sit deserunt cupiditate tempore alias. Nobis rem alias architecto porro vel quisquam iste beatae suscipit voluptatum. Voluptas sapiente modi deserunt?</p>
+              </Container>
+
+            </Typography>
           </TimelineContent>
         </TimelineItem>
-         {/*Timeline-"BASEBALL" end*/}
+         {/*Timeline-"TRAINING" end*/}
+
+
+
+         <TimelineItem>
+          <TimelineOppositeContent
+            sx={{ m: "auto 0" }}
+            variant="body2"
+            color="text.secondary"
+          >
+           {/*!!!!!!!!!!!!!!!!!ADD CONTAINER IMAGE OF SORT */}
+           Training Services
+          </TimelineOppositeContent>
+          <TimelineSeparator>
+            <TimelineConnector />
+            <TimelineDot color="primary">
+              <FitnessCenterIcon />
+            </TimelineDot>
+            <TimelineConnector />
+          </TimelineSeparator>
+          <TimelineContent sx={{ py: "12px", px: 2 }}>
+            <Typography variant="h6" component="span">
+              
+            </Typography>
+              {/*!!!!!!!!!!!!!!!!!ADD CONTAINER TEXT FOR TRAINING */}
+            <Typography>
+              <Container className="training-card" style={{ margin: "20px" }}>
+                <h3 className="timeline-header">Step 3: TRAIN WITH US</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sint sit deserunt cupiditate tempore alias. Nobis rem alias architecto porro vel quisquam iste beatae suscipit voluptatum. Voluptas sapiente modi deserunt?</p>
+              </Container>
+
+            </Typography>
+          </TimelineContent>
+        </TimelineItem>
+
+
 
            {/*Timeline-"SOFTBALL" start*/}
         <TimelineItem>
