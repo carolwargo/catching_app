@@ -1,9 +1,19 @@
 import React from 'react';
+import { useNavigate } from 'react-router';
 
 import Form from 'react-bootstrap/Form';
 
 function FormFileExample() {
+  
+  const navigate = useNavigate();
+
+  const handleGoBack = () => {
+    navigate(-1);
+  };
   return (
+
+    <>
+      <button onClick={handleGoBack}>Back</button>
     <div className='train-container'>
     <h1>TRAIN LIKE A CAVEMAN</h1>
     <br></br>
@@ -52,6 +62,7 @@ function FormFileExample() {
       </Form.Group>
     </div>
     </div> 
+    </>
   );
 }
 

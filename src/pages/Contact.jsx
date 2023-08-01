@@ -3,9 +3,21 @@ import Container from "react-bootstrap/Container";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import { Row, Col } from "react-bootstrap";
+import { useNavigate } from 'react-router';
+
 
 export default function Contact() {
+  
+  const navigate = useNavigate();
+
+  const handleGoBack = () => {
+    navigate(-1);
+  };
   return (
+
+ 
+      <>
+      <button onClick={handleGoBack}>Back</button>
 
     <Row md={5} lg={3}>
     <Container className="page-container">
@@ -40,5 +52,6 @@ export default function Contact() {
         </Col>
     </Container>
     </Row>
+    </>
   );
 }

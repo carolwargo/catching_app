@@ -26,6 +26,7 @@ export default function App() {
         <Route path="/train" element={<Train />} />
         <Route path="/login" element={<Login />} /> {/* Add the login route */}
         <Route path="/signup" element={<SignUp />} /> {/* Add the sign-up route */}
+{/* Add dashboard route after authentication */}
       </Routes>
       <Footer />
     </Router>

@@ -1,13 +1,18 @@
+/*checked*/
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
-body {
+
+/*checked*/
+.container-body {
   margin: 0;
   font-family: "Poppins";
+  width: 100vw;
 }
 
+/*checked*/
 /*"background" is the transparency*/
 .main-col {
   background: black;
@@ -17,6 +22,37 @@ body {
   height: 100vh;
 }
 
+/*checked*/
+.main-col:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/Cover.png");
+  background-size: cover;
+  background-position: 100%;
+  opacity: .55;
+}
+
+/*checked*/
+.main-col .content-container {
+  position: absolute;
+  top: 20%;
+  transform: translateY(-40%);
+  transform: translateX(1%);
+  padding: 0 5%;
+  width: 100%;
+}
+
+
+.content-col {
+  padding: 6.75rem 8vw;
+}
+
+
+  
 /*Includes, Image with trans, h1, p, and form-container*/
 /* position relative on parent^, position absolute on child*/
 .main-col:before {
@@ -32,6 +68,7 @@ body {
   opacity: 0.55;
 }
 
+/*checked*/
 .main-col .content-container {
   position: absolute;
   top: 20%;
@@ -78,10 +115,10 @@ body {
   background-color: red;
   color: white;
   border: none;
-  padding: 10px 20px;
+  padding: 5px 10px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
   border-radius: 5px;
   margin-top: 10px !important;

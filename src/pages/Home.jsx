@@ -17,8 +17,6 @@ import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import LockOpenIcon from "@mui/icons-material/LockOpen";
 import FitnessCenterIcon from '@mui/icons-material/FitnessCenter';
-import HotelIcon from "@mui/icons-material/Hotel";
-import RepeatIcon from "@mui/icons-material/Repeat";
 import LockIcon from '@mui/icons-material/Lock';
 import Typography from "@mui/material/Typography";
 
@@ -39,14 +37,8 @@ export default function Home() {
                 their game."
               </h5>
             </div>
-
-            {/*INPUT BUTTON start*/}
-           <div className="input-btn">
-              <Link to="/signup">
-                <button className="signup-btn">Sign me up</button>
-              </Link>
-            </div>
-            {/*INPUT BUTTON end*/}
+         
+       
           </div>
         </div>
       </div>
@@ -54,8 +46,21 @@ export default function Home() {
 
 
 {/*TIMELINE START */}
-      {/*Timeline- "STEP 1 start*/}
+{/*1. SIGNUP FORM start*/}
       <Timeline position="alternate">
+
+{/*"learn-more-Container" START */}
+      <Container className="learn-more-container">
+  <h1>
+  <span className="red-text">
+          <Link to="/learn-more">LEARN MORE</Link>
+        </span>
+        </h1>
+    <h4>Unlock the benefits of 301_catching: </h4>
+  <p> Follow the step-by-step guide below.</p>
+  </Container>
+{/*"learn-more-Container" END */}
+
         <TimelineItem>
           <TimelineOppositeContent
             sx={{ m: "auto 0" }}
@@ -98,7 +103,8 @@ export default function Home() {
                   </Button>
                 </Container>
               </Col>
-              {/*SIGNUP FORM end*/}
+{/*1. SIGNUP FORM end*/}
+
             </Typography>
 
           </TimelineOppositeContent>
@@ -124,11 +130,9 @@ export default function Home() {
             </Typography>
           </TimelineContent>
         </TimelineItem>
-      
-
-
-
-        {/*Timeline- TRAINING start*/}
+{/*"1. SIGN UP TODAY" end */} 
+        
+{/*"2. WHO WE ARE" start */}
         <TimelineItem>
           <TimelineOppositeContent
             sx={{ m: "auto 0" }}
@@ -154,17 +158,18 @@ export default function Home() {
               {/*!!!!!!!!!!!!!!!!!ADD CONTAINER TEXT FOR TRAINING */}
             <Typography>
               <Container className="training-card" style={{ margin: "20px" }}>
-                <h3 className="timeline-header">Step 2: VIEW CONTENT</h3>
+                <h3 className="timeline-header">Step 2: WHO WE ARE</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sint sit deserunt cupiditate tempore alias. Nobis rem alias architecto porro vel quisquam iste beatae suscipit voluptatum. Voluptas sapiente modi deserunt?</p>
               </Container>
 
             </Typography>
           </TimelineContent>
         </TimelineItem>
-         {/*Timeline-"TRAINING" end*/}
+        
+{/*"2. WHO WE ARE" end*/}  
 
 
-
+{/*"3. WHAT WE DO" start*/}
          <TimelineItem>
           <TimelineOppositeContent
             sx={{ m: "auto 0" }}
@@ -188,48 +193,14 @@ export default function Home() {
               {/*!!!!!!!!!!!!!!!!!ADD CONTAINER TEXT FOR TRAINING */}
             <Typography>
               <Container className="training-card" style={{ margin: "20px" }}>
-                <h3 className="timeline-header">Step 3: TRAIN WITH US</h3>
+                <h3 className="timeline-header">Step 3: WHAT WE DO</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sint sit deserunt cupiditate tempore alias. Nobis rem alias architecto porro vel quisquam iste beatae suscipit voluptatum. Voluptas sapiente modi deserunt?</p>
               </Container>
 
             </Typography>
           </TimelineContent>
         </TimelineItem>
-
-
-
-           {/*Timeline-"SOFTBALL" start*/}
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineConnector />
-            <TimelineDot color="primary" variant="outlined">
-              <HotelIcon />
-            </TimelineDot>
-            <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-          </TimelineSeparator>
-          <TimelineContent sx={{ py: "12px", px: 2 }}>
-            <Typography variant="h6" component="span">
-             SOFTBALL
-            </Typography>
-            <Typography>Because GIRLS RULE, BOYS DROOL!</Typography>
-          </TimelineContent>
-        </TimelineItem>
-        <TimelineItem>
-          <TimelineSeparator>
-            <TimelineConnector sx={{ bgcolor: "secondary.main" }} />
-            <TimelineDot color="secondary">
-              <RepeatIcon />
-            </TimelineDot>
-            <TimelineConnector />
-          </TimelineSeparator>
-          <TimelineContent sx={{ py: "12px", px: 2 }}>
-            <Typography variant="h6" component="span">
-              BASEBALL
-            </Typography>
-            <Typography>Because this is the life you love!</Typography>
-          </TimelineContent>
-        </TimelineItem>
-        {/*Timeline-"SOFTBALL" end*/}
+{/*"3. WHAT WE DO" end*/}
 
       </Timeline>
     </>

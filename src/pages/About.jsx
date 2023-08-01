@@ -4,11 +4,44 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
+import { useNavigate} from 'react-router';
+import { Link } from 'react-router-dom';
 
 import aboutImage from "../images/about.png";
 
 function AutoLayoutExample() {
+
+  const navigate = useNavigate();
+
+  const handleGoBack = () => {
+    navigate(-1);
+  };
   return (
+    <>
+     <div className="link-container">
+        <button onClick={handleGoBack}>Back</button>
+        <Link to="/">Home</Link> 
+      </div>
+
+      
+      <Row className="row-about" md={8} lg={3}>
+      <Col className="col-image">
+        {/* Apply the CSS style to the image */}
+        <img src={aboutImage} alt="About" style={{ maxWidth: "100%" }} />
+      </Col>
+      <Col className="col-content">resume
+        <h1>ABOUT</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ab, iste sit quam soluta atque neque temporibus repellat. Animi, magni. Modi sunt ex ut error qui facere, hic quas nulla!</p>
+        <h1>How we started</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ab, iste sit quam soluta atque neque temporibus repellat. Animi, magni. Modi sunt ex ut error qui facere, hic quas nulla!</p>
+        <h1>What we experienced</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ab, iste sit quam soluta atque neque temporibus repellat. Animi, magni. Modi sunt ex ut error qui facere, hic quas nulla!</p>
+      </Col>
+      </Row>
+   
+
+
+    {/* */}
     <Container>
       <Row>
         <Col className="image-column">
@@ -41,6 +74,7 @@ function AutoLayoutExample() {
         <Col>3 of 3</Col>
       </Row>
     </Container>
+    </>
   );
 }
 

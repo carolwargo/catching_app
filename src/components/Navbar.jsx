@@ -6,6 +6,8 @@ import { NavLink } from 'react-router-dom';
 import { FaTwitter, FaInstagram } from 'react-icons/fa';
 import Logo from "../images/Logo.png";
 
+
+
 import '../Styles/Navbar.css';
 
 function TabsExample() {
