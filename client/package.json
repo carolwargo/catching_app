@@ -1,0 +1,64 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "private": true,
+  "proxy": "http://localhost:3001",
+  "dependecies": {
+    "axios": "^1.4.0",
+    "bootstrap": "^5.3.0",
+    "concurrently": "^8.2.0",
+    "invariant": "^2.2.4",
+    "node-fetch": "^3.3.1",
+    "react": "^17.0.2",
+    "react-bootstrap": "^2.8.0",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^7.45.2",
+    "react-router-dom": "^5.3.4",
+    "react-scripts": "^5.0.1",
+    "ts-invariant": "^0.10.3",
+    "@testing-library/jest-dom": "^5.11.6",
+    "@testing-library/react": "^11.2.2",
+    "@testing-library/user-event": "^12.5.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "node-polyfill-webpack-plugin": "^2.0.1"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carolwargo/301_catching.git"
+  },
+  "author": "Carol Wargo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carolwargo/301_catching/issues"
+  },
+  "homepage": "https://github.com/carolwargo/301_catching#readme"
+}

@@ -1,7 +1,10 @@
 {
   "name": "301_catching",
-  "version": "0.1.0",
-  "private": true,
+  "description": "",
+  "main": "server.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
@@ -29,17 +32,28 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node server/server.js",
+    "develop": "concurrently \"cd server && npm run watch\" \"cd client && npm start\"",
+    "install": "cd server && npm i && cd ../client && npm i",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build"
   },
+
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
   },
+  "devDependencies": {
+    "nodemon": "^2.0.15",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "babel-plugin-webpack-alias": "^2.1.2",
+    "concurrently": "^8.2.0",
+    "node-polyfill-webpack-plugin": "^2.0.1",
+    "webpack-node-externals": "^3.0.0"
+  },
+
   "browserslist": {
     "production": [
       ">0.2%",
@@ -51,10 +65,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "",
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  }
+
 }
