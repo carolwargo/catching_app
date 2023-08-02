@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 import envCompatible from 'vite-plugin-env-compatible';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import { NodeGlobalsPolyfillPlugin } from 'esbuild-plugins/node-globals-polyfill';
-import svgr from 'vite-plugin-svgr'; // Correct import name
+import svgrPlugin from 'vite-plugin-svgr'; // Correct import name
 
 export default defineConfig({
   envPrefix: 'REACT_APP_',
@@ -28,7 +28,7 @@ export default defineConfig({
     react(),
     envCompatible(),
     tsconfigPaths(),
-    svgr({ // Correct plugin name
+    svgrPlugin({ // Correct plugin name
       svgrOptions: {
         icon: true,
       },
