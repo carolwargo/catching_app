@@ -33,9 +33,9 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.45.2",
     "react-icons": "^4.10.1",
+    "react-redux": "^8.1.1",
     "react-router-dom": "^6.14.2",
     "react-typewriter-effect": "^1.1.0",
-    "react-redux": "^8.1.1",
     "redux": "^4.1.1",
     "redux-thunk": "^2.4.2",
     "ts-invariant": "^0.10.3",
@@ -57,6 +57,7 @@
     "@esbuild-plugins/node-globals-polyfill": "^0.2.3",
     "@vitejs/plugin-react": "1.1.1",
     "vite": "^2.6.4",
+    "vite-plugin-svgr": "^3.2.0",
     "vite-tsconfig-paths": "^4.2.0"
   },
   "browserslist": {
