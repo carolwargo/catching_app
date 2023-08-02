@@ -2,7 +2,7 @@
   "name": "client",
   "version": "1.0.0",
   "private": true,
-  "proxy": "http://localhost:3001",
+  "proxy": "http://localhost:3000",
   "dependencies": {
     "axios": "^1.4.0",
     "bootstrap": "^5.3.0",
@@ -56,9 +56,5 @@
     "url": "git+https://github.com/carolwargo/301_catching.git"
   },
   "author": "Carol Wargo",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/carolwargo/301_catching/issues"
-  },
-  "homepage": "https://github.com/carolwargo/301_catching#readme"
+  "license": "ISC"
 }
