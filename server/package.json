@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "seed": "node seeds/seed.js",
-    "watch": "nodemon server.js"
+    "watch": "nodemon server.js",
+    "build:client": "cd client && vite build"
 },
 
 "dependencies": {
@@ -18,7 +19,8 @@
     "mongoose": "^7.0.2"
 },
 "devDependencies": {
-    "nodemon": "^2.0.6"
+    "nodemon": "^2.0.6",
+    "vite": "^2.6.4"
 }
 
 }
